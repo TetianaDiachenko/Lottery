@@ -14,6 +14,7 @@
 		background-color: $whiteColor;
 		@media (min-width: 992px) {
 			display: flex;
+			justify-content: space-between;
 			width: 100%;
 		}
 	}
@@ -23,7 +24,7 @@
 		margin: 0 auto;
 		@media (min-width: 992px) {
 			margin: 0;
-			width: 37%;
+			width: 36%;
 			overflow: hidden;
 		}
 		img {
@@ -41,7 +42,7 @@
 		flex-direction: column;
 		justify-content: center;
 		@media (min-width: 992px) {
-			width: 63%;		
+			width: 64%;		
 		}
 	}
 
