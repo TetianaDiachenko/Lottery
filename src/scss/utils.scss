@@ -12,11 +12,12 @@ $pinkBackground: #FCEDEC;
 $blueMaximize: #d9eeff;
 $greenColor: #00A86B;
 $maxWidth: 1440px;
-$containerWidth: 1280px;
+$containerWidth: 1260px;
 
 ._container {
 	max-width: $containerWidth;
 	margin: 0px auto;
+
 }
 
 ._maxContainer {
@@ -24,62 +25,29 @@ $containerWidth: 1280px;
 	margin: 0px auto;
 }
 
-// ._red {
-// 	color:#FF0000;
-// }
+._green {
+	color: $greenColor;
+}
 
-// ._title,
-// ._title2 {
-// 	color: $fontColor;
-// 	font-weight: 600;
-// 	letter-spacing: -0.72px;
-
-// }
-// ._title {
-// 	font-size: 24px;
-// 	line-height: 1.8;
-// 	@media (min-width: 744px) {
-// 		font-size: 30px;
-// 		line-height: 1.4;
-// 	} 
-// 	@media (min-width: 992px) {
-// 		font-size: 36px;
-// 		line-height: 1.2;
-// 	}
-// }
-// ._title2 {
-// 	font-size: 32px;
-// 	line-height: 1.8;
-// 	@media (min-width: 992px) {
-// 		font-size: 48px;
-// 	}
-
-// }
-
-// @mixin text-red {
-// 	color:#FF0000;
-// }
-
-// @mixin button($btnHeight, $btnPad, $btnFontSize) { 
-//    color: $whiteColor;
-//    background: $lightBlueColor;
-//    border-radius: 30px;
-//    display: inline-flex;
-//    align-items: center;
-//    justify-content: center;
-//    text-align: center;
-//    height: $btnHeight;
-//    padding: 0px $btnPad;
-//    font-size: $btnFontSize;
-//    font-weight: 600;
-// 	box-shadow: 0 3px 18px 0 rgba(0, 0, 0, 0.3);
-//    transition: all 0.3s ease 0s;
-//       &:hover {
-//          color: $whiteColor;
-//          background: $blueColor;
-//          transition: all 0.3s ease 0s;
-// 		}
-// }
+@mixin button($btnHeight, $btnPad) { 
+   color: $whiteColor;
+   background: $brightBlue;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+	text-transform: uppercase;
+   height: $btnHeight;
+   padding: 0px $btnPad;
+   font-size: 24px;
+   font-weight: 800;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+   transition: all 0.3s ease 0s;
+      &:hover {
+         background: $hoverButton;
+         transition: all 0.3s ease 0s;
+		}
+}
 
 
 
