@@ -47,4 +47,15 @@ function popupClose(popupActive) {
 	}
 }
 
+// Submit
+
+const submitLink = document.querySelector('.submit-link');
+const submit = document.querySelector('.submit');
+
+submitLink.addEventListener('click', openSubmit);
+
+function openSubmit() {
+	popup.classList.remove('open');
+	submit.classList.add('open');
+}
 

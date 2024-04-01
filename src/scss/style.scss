@@ -1,8 +1,10 @@
 @import "fonts";
 @import "reset";
 @import "utils";
+@import "popup";
 @import "header";
 @import "footer";
+
 
 body {
 	font-family: $fontFamily;
