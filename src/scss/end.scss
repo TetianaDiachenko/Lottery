@@ -7,7 +7,6 @@
 		@media (min-width: 992px) {
 			padding: 50px 0px 5px;
 		}
-
 	}
 
 	&__card {
@@ -25,11 +24,15 @@
 		@media (min-width: 992px) {
 			margin: 0;
 			width: 37%;
+			overflow: hidden;
 		}
 		img {
-			width: 100%;	
+			width: 100%;
+			@media (min-width: 992px) {
+				height: 100%;	
+				width: auto;
+			}
 		}
-
 	}
 
 	&__info {
@@ -40,7 +43,6 @@
 		@media (min-width: 992px) {
 			width: 63%;		
 		}
-
 	}
 
 	&__info-title {
@@ -63,16 +65,9 @@
 			line-height: 1.7;
 		}
 	}
-
 	&__card-one,
 	&__card-three {
 		flex-direction: row-reverse;
-	}
-
-	&__card-two {
-	}
-
-	&__card-three {
 	}
 }
 
