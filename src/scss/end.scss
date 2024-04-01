@@ -1,0 +1,78 @@
+.end {
+	background-color: $lightBlue;
+
+	&__cards {
+		width: 100%;
+		padding: 50px 20px 5px;
+		@media (min-width: 992px) {
+			padding: 50px 0px 5px;
+		}
+
+	}
+
+	&__card {
+		margin-bottom: 45px;
+		background-color: $whiteColor;
+		@media (min-width: 992px) {
+			display: flex;
+			width: 100%;
+		}
+	}
+
+	&__image {
+		max-width: 457px;
+		margin: 0 auto;
+		@media (min-width: 992px) {
+			margin: 0;
+			width: 37%;
+		}
+		img {
+			width: 100%;	
+		}
+
+	}
+
+	&__info {
+		padding: 30px 10px 30px 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		@media (min-width: 992px) {
+			width: 63%;		
+		}
+
+	}
+
+	&__info-title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.2;
+		text-transform: uppercase;
+		padding-bottom: 15px;
+		@media (min-width: 744px) {
+			font-size: 32px;
+
+		}
+	}
+
+	&__info-text {
+		font-size: 18px;
+		line-height: 1.5;
+		@media (min-width: 744px) {
+			font-size: 24px;
+			line-height: 1.7;
+		}
+	}
+
+	&__card-one,
+	&__card-three {
+		flex-direction: row-reverse;
+	}
+
+	&__card-two {
+	}
+
+	&__card-three {
+	}
+}
+
