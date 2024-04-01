@@ -97,13 +97,17 @@
 
 	&__button-link {
 		width: 95%;
-		@include button(76px, 0px);
+		@include button(56px, 0px);
 		font-weight: 700;
 		text-transform: unset;
 		box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
 
 		@media (min-width: 744px) {
 			width: 70%;
+			@include button(76px, 0px);
+			font-weight: 700;
+			text-transform: unset;
+			box-shadow: 2px 4px 10px 0 rgba(0, 0, 0, 0.1);
 		}
 		@media (min-width: 992px) {
 			width: 95%;
