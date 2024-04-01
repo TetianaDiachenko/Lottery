@@ -9,6 +9,7 @@
 			flex-direction: row;
 			align-items: normal;
 			padding-bottom: 50px;
+			align-items: flex-end;
 		}
 	}
 
@@ -19,6 +20,8 @@
 		@media (min-width: 992px) {
 			width: 50%;
 			padding: 61px 0px 0px;
+			display: flex;
+			flex-direction: column;
 			text-align: start;
 		}
 	}
@@ -83,7 +86,7 @@
 			font-size: 24px;
 		}
 		@media (min-width: 992px) {
-			padding-left: 90px;
+			padding: 0px 10px 53px 90px;
 		}
 	}
 
@@ -91,7 +94,8 @@
 		margin-top: 30px;
 		@media (min-width: 992px) {
 			padding-left: 90px;
-			margin-top: 53px;
+			margin-top: 53px;    
+			margin-top: auto;
 		}
 	}
 
