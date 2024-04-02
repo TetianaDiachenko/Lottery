@@ -1,0 +1,65 @@
+.maximaze {
+	background-color: $whiteColor;
+	&__container {
+		padding-bottom: 50px;
+	}
+
+	&__available {
+		background-color: $pinkBackground;
+		text-align: center;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 1.4;
+		padding: 29px 20px;		
+		@media (min-width: 992px) {
+			font-size: 40px;
+		}
+	}
+
+	&__win {
+		background-color: $whiteColor;
+		text-align: center;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 1.4;
+		padding: 29px 20px;		
+		@media (min-width: 992px) {
+			font-size: 40px;
+		}
+	}
+
+	&__lottery {
+		background-color: $blueBackground;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		flex-wrap: wrap;
+		padding: 21px 20px;	
+	}
+
+	&__lottery-logo {
+		max-width: 282px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__lottery-text {
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 110%;
+		letter-spacing: 1.38px;
+		text-transform: uppercase;
+		padding: 20px 25px;		
+	}
+
+	&__lottery-sign {
+		width: 73px;
+		height: 73px;
+		&:hover .maximaze__lottery-link img{
+			filter: invert(36%) sepia(87%) saturate(481%) hue-rotate(158deg) brightness(80%) contrast(78%);			
+		}
+	}
+}
