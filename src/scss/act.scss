@@ -1,11 +1,18 @@
 .act {
    background-color: $whiteColor;
 	&__container {
-		display: flex;
-		flex-direction: column;
 		padding: 0px 0px 50px;	
+		justify-content: center;
 		@media (min-width: 744px) {
-			flex-direction: row;
+			display: grid;
+			column-gap: 27px;
+			row-gap: 14px;
+			grid-template-columns: repeat(2, minmax(250px, 360px));		
+			grid-auto-rows: 1fr;
+			margin: 0px auto;
+		}
+		@media (min-width: 1260px) {
+			grid-template-columns: repeat(3, minmax(402px, 1fr));	
 		}
 	}
 
@@ -20,7 +27,10 @@
 		background-image: url('@img/Image S8.1.jpg');
 		margin: 20px auto;
 		@media (min-width: 744px) {
-			display: none;
+			margin: 0px;
+		}
+		@media (min-width: 1260px) {
+			order: 1;
 		}
 	}
 	&__card-image1,
@@ -37,18 +47,18 @@
 		font-size: 30px;
 		line-height: 1.2;
 		@media (min-width: 744px) {
-			order: 2;
 			font-size: 40px;
+		}
+		@media (min-width: 1260px) {
+			order: 2;
 		}
 		h3 {
 			padding-bottom: 50px;
 			@media (min-width: 744px) {
-				padding-bottom: 73px;
+				padding-bottom: 65px;
+    			padding-top: 60px;
 			}
 		}
-	}
-
-	&__button {
 	}
 
 	&__button-link {
@@ -56,8 +66,11 @@
 		font-size: 20px;
 		margin-bottom: 30px;
 		@media (min-width: 744px) {
-			@include button(86px, 128px);
+			@include button(86px, 82px);
 			margin-bottom: 0;
+		}
+		@media (min-width: 1260px) {
+			width: 100%;
 		}
 	}
 
@@ -65,7 +78,11 @@
 		order: 3;
 		background-image: url('@img/Image S8.2.jpg');
 		@media (min-width: 744px) {
-			order: 1;
+			display: none;
+		}
+		@media (min-width: 1260px) {
+			display: block;
+			order: 3;
 		}
 	}
 }
