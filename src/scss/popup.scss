@@ -27,7 +27,7 @@
 
 	&__content {
 		background-color: $blueBackground;
-		color: $blackColor;
+		color: $darkBlue;
 		max-width: 100%;
 		position: relative;
 		transition: all 0.8s ease 0s;
@@ -81,7 +81,6 @@
 			font-size: 24px;
 		}
 	}
-
 }
 .form {
 	padding: 35px 0px 0px;
@@ -102,7 +101,6 @@
 		border: 1px solid #1e1e1e;
 		border-radius: 4px;
 		padding: 10px 12px;
-
 	}
 
 	&__button {
@@ -115,6 +113,7 @@
 		}
 	}
 }
+
 .close-popup {
 	width: 22px;
 	img {
