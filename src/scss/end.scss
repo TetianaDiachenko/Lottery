@@ -12,6 +12,7 @@
 	&__card {
 		margin-bottom: 45px;
 		background-color: $whiteColor;
+		box-shadow: 2px 4px 15px 0 rgba(0, 0, 0, 0.1);
 		@media (min-width: 992px) {
 			display: flex;
 			justify-content: space-between;
